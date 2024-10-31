@@ -1,28 +1,29 @@
 import React, { useRef, useEffect, useState } from "react";
-import Marquee from "react-fast-marquee";
-import { iconData } from "../data/iconData";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
 
   const animateRef = useRef<HTMLDivElement>(null);
 
-  // animation fade in
+  // for transition
   useEffect(() => {
+    const currentElement = animateRef.current; // Store the ref value in a variable
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
+        // console.log("Intersecting:", entry.isIntersecting);
       },
-      { threshold: 0.2 },
+      { threshold: 0.1 },
     );
 
-    if (animateRef.current) {
-      observer.observe(animateRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (animateRef.current) {
-        observer.unobserve(animateRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, []);
@@ -40,9 +41,9 @@ export default function About() {
           {/* div 1 */}
           <div className="absolute flex h-full w-full items-start justify-start md:relative md:w-3/4 md:items-end md:justify-end lg:w-3/4 xl:w-1/2 2xl:w-1/2">
             <img
-              src="/aboutme.png"
+              src={`${process.env.PUBLIC_URL}/myimg/about-img.png`}
+              alt="About Section of Kyle R. Burdeos, a passionate Software Developer specializing in Frontend Development"
               className={` ${isVisible ? "translate-x-0" : "-translate-x-10"} absolute bottom-0 -ml-16 h-[97%] w-auto drop-shadow-[-15px_0px_10px_rgba(0,0,0,0.5)] transition-all duration-700 ease-in-out sm:-ml-0 md:h-[97%]`}
-              draggable={false}
             />
           </div>
           {/* div2 */}
@@ -71,7 +72,7 @@ export default function About() {
             <div className="mt-6 lg:mt-10">
               <div className="flex items-center justify-end gap-3.5">
                 <a
-                  href="cv/myresume.pdf"
+                  href={`${process.env.PUBLIC_URL}/pdf/my-cv.pdf`}
                   download="Kyle Burdeos CV 2024"
                   className="rounded-md border border-amber-500 bg-amber-700 p-2 text-xs font-medium text-white hover:bg-amber-800 md:text-xs lg:text-sm xl:text-base"
                 >
@@ -90,7 +91,8 @@ export default function About() {
             <div className="mt-0 flex justify-end lg:mt-6">
               <div className="flex flex-col items-center justify-center rounded-sm p-2">
                 <img
-                  src="/mylogo.png"
+                  alt="Kyle Burdeos Dev Logo"
+                  src={`${process.env.PUBLIC_URL}/myimg/my-logo.png`}
                   draggable={false}
                   className="w-[160px] xl:w-[200px]"
                 />
@@ -99,7 +101,11 @@ export default function About() {
                     Kyle R. Burdeos
                   </h1>
                   <div className="absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-6">
-                    <img src="/signature.png" width={60}></img>
+                    <img
+                      src={`${process.env.PUBLIC_URL}/myimg/about-signature.png`}
+                      width={60}
+                      alt="Kyle Burdeos Electronic Signature"
+                    ></img>
                   </div>
                 </div>
               </div>

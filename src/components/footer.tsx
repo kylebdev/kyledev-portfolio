@@ -21,7 +21,12 @@ export default function Footer() {
 
         {/* Logo and Tech Stack */}
         <div className="flex flex-col items-center justify-center">
-          <img src="/mylogo.png" width={120} alt="Logo" draggable={false} />
+          <img
+            src={`${process.env.PUBLIC_URL}/myimg/my-logo.png`}
+            width={120}
+            alt="Logo"
+            draggable={false}
+          />
           <p className="text-xs">
             Built with <span className="text-blue-400">React</span> and{" "}
             <span className="text-teal-400">Tailwind CSS</span>

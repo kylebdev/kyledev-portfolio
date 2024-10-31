@@ -10,42 +10,47 @@ import {
 } from "@mui/icons-material";
 
 export default function Home({ ContentRef }: any) {
-  const AnimateRef = useRef<HTMLDivElement>(null);
+  const animateRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  // for transition
   useEffect(() => {
+    const currentElement = animateRef.current; // Store the ref value in a variable
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
+        // console.log("Intersecting:", entry.isIntersecting);
       },
       { threshold: 0.1 },
     );
 
-    if (AnimateRef.current) {
-      observer.observe(AnimateRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (AnimateRef.current) {
-        observer.unobserve(AnimateRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, []);
+
   return (
     <section id="home" className="py-20 md:py-0">
       <div className="relative m-auto h-full max-h-[800px] md:container 2xl:h-[calc(100vh-2rem)]">
         <div className="flex h-full items-center justify-center">
           <div className="flex flex-col items-center py-6 md:py-24 2xl:flex-row">
             <div
-              ref={AnimateRef}
+              ref={animateRef}
               className={` ${isVisible ? "animate-slidein300" : "opacity-0"} opacity-0`}
             >
               {/* profile photo */}
 
               <img
                 ref={ContentRef}
-                src="/profile.png"
-                alt="profile"
+                src={`${process.env.PUBLIC_URL}/myimg/home-img.png`}
+                alt="Hi! I'm Kyle Burdeos Portfolio, Welcome to my Portfolio"
                 className="w-[270px] rounded-full border-4 border-white/30 shadow-inner shadow-white md:w-[300px] lg:w-[330px] 2xl:w-[400px]"
                 draggable="false"
               />
@@ -131,7 +136,7 @@ export default function Home({ ContentRef }: any) {
                     />
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/kylebdev"
                     className="mx-2 rounded-full border-2 border-dashed border-neutral-500 p-[2px] duration-75 ease-in hover:scale-125"
                   >
                     <GitHub

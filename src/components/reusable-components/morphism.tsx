@@ -26,9 +26,11 @@ export default function Morphism({ imgSrc, imgTitle }: any) {
       <div className="relative flex h-full w-full rounded-full bg-white/20 p-6 md:p-8">
         <span className="flex w-full items-center justify-center">
           <img
+            alt={imgTitle + "Logo"}
             draggable="false"
-            src={imgSrc}
+            src={`${process.env.PUBLIC_URL}` + imgSrc}
             className={`w-8 transition-transform duration-150 ease-in-out md:w-12 xl:w-14 ${hoverScale ? "scale-110 sm:scale-125" : "scale-100"}`}
+            //  {/*             src={`${process.env.PUBLIC_URL}/profile.png`} */}
           />
         </span>
       </div>

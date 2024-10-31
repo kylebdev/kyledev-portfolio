@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Portfolio Website",
     description: "A responsive portfolio to showcase my projects and skills.",
-    src: "/portfolio.mp4",
+    src: "/video/hlights-portfolio.mp4",
     tech: ["React-Typescript", "Tailwind CSS"],
     link: "#",
     github: "#",
@@ -48,20 +48,23 @@ const Projects = () => {
 
   // for transition
   useEffect(() => {
+    const currentElement = animateRef.current; // Store the ref value in a variable
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
+        // console.log("Intersecting:", entry.isIntersecting);
       },
       { threshold: 0.1 },
     );
 
-    if (animateRef.current) {
-      observer.observe(animateRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (animateRef.current) {
-        observer.unobserve(animateRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, []);
@@ -85,7 +88,10 @@ const Projects = () => {
                 className={`scale-100 rounded-lg border-2 border-neutral-900 bg-gradient-to-r from-black/30 to-white/30 transition duration-700 ease-out hover:scale-105 hover:shadow-lg hover:shadow-white`}
               >
                 <video className="z-10 h-52 w-full" autoPlay controls>
-                  <source src={project.src} type="video/mp4" />
+                  <source
+                    src={`${process.env.PUBLIC_URL}` + project.src}
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
 

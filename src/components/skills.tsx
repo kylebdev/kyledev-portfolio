@@ -7,20 +7,23 @@ export default function Skills() {
   const animateRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentElement = animateRef.current; // Store the ref value in a variable
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
+        // console.log("Intersecting:", entry.isIntersecting);
       },
       { threshold: 0.3 },
     );
 
-    if (animateRef.current) {
-      observer.observe(animateRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (animateRef.current) {
-        observer.unobserve(animateRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, []);

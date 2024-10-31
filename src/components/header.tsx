@@ -7,8 +7,6 @@ import Contact from "./contact";
 import Project from "./projects";
 import Footer from "./footer";
 
-import { Menu } from "@mui/icons-material";
-
 import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
@@ -67,7 +65,7 @@ export default function Header() {
       }
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [console.log(activeSection)]);
+  }, []);
 
   return (
     <div>
@@ -80,7 +78,11 @@ export default function Header() {
         <nav className="container m-auto flex w-full justify-around">
           {/* logo */}
           <div>
-            <img src="/mylogo.png" alt="" width={170} />
+            <img
+              src={`${process.env.PUBLIC_URL}/myimg/my-logo.png`}
+              alt="Kyle Burdeos Dev Logo"
+              width={170}
+            />
           </div>
 
           {/* for mobile */}

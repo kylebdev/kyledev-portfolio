@@ -19,20 +19,23 @@ export default function Contact() {
 
   // for transition
   useEffect(() => {
+    const currentElement = animateRef.current; // Store the ref value in a variable
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
+        // console.log("Intersecting:", entry.isIntersecting);
       },
       { threshold: 0.1 },
     );
 
-    if (animateRef.current) {
-      observer.observe(animateRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (animateRef.current) {
-        observer.unobserve(animateRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, []);
@@ -56,7 +59,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div
-        className={`${isVisible || showForm ? "opacity-100" : "opacity-0"} relative m-auto pb-16 transition-all duration-700 ease-in-out md:container md:pb-0`}
+        className={`${isVisible ? "opacity-100" : "opacity-0"} relative m-auto pb-16 transition-all duration-700 ease-in md:container md:pb-0`}
         ref={animateRef}
       >
         <div className="h-full max-h-[800px] items-center justify-center md:flex md:h-[calc(100vh-2rem)]">
@@ -84,7 +87,7 @@ export default function Contact() {
 
                   <div className="flex-cols flex justify-center pt-3">
                     <a
-                      href="#"
+                      href="https://www.facebook.com/kaelmotivated/"
                       className="mx-1 duration-75 ease-in hover:scale-125"
                     >
                       <Facebook
@@ -101,7 +104,7 @@ export default function Contact() {
                       />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/kyleburdeos/"
                       className="mx-1 duration-75 ease-in hover:scale-125"
                     >
                       <Instagram
@@ -118,7 +121,7 @@ export default function Contact() {
                       />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/kyle-burdeos-541a11248/"
                       className="mx-1 stroke-1 duration-75 ease-in hover:scale-125"
                     >
                       <LinkedIn
