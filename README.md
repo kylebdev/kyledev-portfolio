@@ -1,10 +1,10 @@
 # My Portfolio
 
-Welcome to my portfolio! Here, you'll find a showcase of my work, skills, and projects that reflect my passion for web development and graphic design.
+Welcome to my portfolio! Here, you'll find a showcase of my work, skills, and projects that highlight my passion for web development and graphic design.
 
 ## About Me
 
-Hi! I'm Kyle R. Burdeos, a Software Engineer based in the Philippines with a background in Web Development. I specialize in Front-End Development, and my goal is to achieve new things related to Web Development and Design while continuously improving my skills to create high-quality products in my career.
+Hi! I'm Kyle R. Burdeos, a Software Engineer based in the Philippines with a background in Web Development. I specialize in Front-End Development, and my goal is to explore new opportunities in Web Development and Design while continuously improving my skills throughout my career.
 
 ## Skills
 
