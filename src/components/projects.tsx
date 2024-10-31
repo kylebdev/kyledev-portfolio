@@ -20,26 +20,26 @@ const projects = [
     link: "#",
     github: "#",
   },
-  // {
-  //   id: 3,
-  //   title: "Performance Monitoring System",
-  //   description:
-  //     "Is a web-based information system designed to improve the Schools Division of Davao City's progress through monthly monitoring of actual work performance.",
-  //   src: "/profile.png",
-  //   tech: ["Html", "Bootstrap CSS", "php"],
-  //   link: "#",
-  //   github: "#",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Reusable Components",
-  //   description:
-  //     "An independent pieces of coude that can be reused throughout the pages to maintain consistency and save time and effort.",
-  //   src: "/profile.png",
-  //   tech: ["React", "Tailwind CSS"],
-  //   link: "#",
-  //   github: "https://github.com/yourgithub/portfolio",
-  // },
+  {
+    id: 3,
+    title: "Performance Monitoring System",
+    description:
+      "Is a web-based information system designed to improve the Schools Division of Davao City's progress through monthly monitoring of actual work performance.",
+    src: "/profile.png",
+    tech: ["Html", "Bootstrap CSS", "php"],
+    link: "#",
+    github: "#",
+  },
+  {
+    id: 4,
+    title: "Reusable Components",
+    description:
+      "An independent pieces of code that can be reused throughout the pages to maintain consistency and save time and effort.",
+    src: "/profile.png",
+    tech: ["React", "Tailwind CSS"],
+    link: "#",
+    github: "https://github.com/yourgithub/portfolio",
+  },
 ];
 
 const Projects = () => {

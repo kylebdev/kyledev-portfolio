@@ -9,6 +9,13 @@ import Footer from "./footer";
 
 import { useEffect, useRef, useState } from "react";
 
+const links = [
+  { id: 1, title: "Home", href: "home" },
+  { id: 2, title: "About Me", href: "about" },
+  { id: 3, title: "Projects", href: "project" },
+  { id: 4, title: "Contact", href: "contact" },
+];
+
 export default function Header() {
   // mobile
   const [showNav, setShowNav] = useState(true);
@@ -21,7 +28,6 @@ export default function Header() {
   const observer = useRef<IntersectionObserver | null>(null);
   const headerRef = useRef<HTMLElement | null>(null);
   const contentRef = useRef<HTMLElement | null>(null);
-  // const [isLink, setIsLink] = useState("home");
 
   useEffect(() => {
     // Set up Intersection Observer for scroll spy
@@ -68,7 +74,11 @@ export default function Header() {
   }, []);
 
   return (
-    <div>
+    <div
+      onMouseEnter={() => {
+        setShowNav(false);
+      }}
+    >
       <header
         ref={headerRef}
         className={`fixed z-10 w-full transition-all duration-300 ${
@@ -85,19 +95,6 @@ export default function Header() {
             />
           </div>
 
-          {/* for mobile */}
-          {/* <div className="content-center">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-lg text-sm text-white hover:text-white/70 lg:hidden"
-              onClick={() => setShowNav((prev) => !prev)}
-            >
-              <span className="sr-only">Open main menu</span>
-
-              <Menu fontSize="large"></Menu>
-            </button>
-          </div> */}
-
           {/* links */}
 
           <div
@@ -110,7 +107,32 @@ export default function Header() {
             }}
           >
             <ul className="flex flex-col items-center gap-2.5 text-center text-sm font-semibold text-white md:bg-transparent lg:flex-row lg:items-start lg:gap-12 lg:text-base">
-              <li>
+              {links.map((link) => (
+                <li
+                  key={link.id}
+                  className={` ${link.id === 4 ? "mt-4 lg:mt-0" : null}`}
+                >
+                  <a
+                    href={`#` + link.href}
+                    className={`${link.id === 4 ? `{ rounded-sm bg-amber-700 p-2 ${activeSection === "contact" ? "shadow shadow-amber-500" : null} }` : "relative"} `}
+                  >
+                    <button
+                      onClick={() => {
+                        setShowNav(false);
+                      }}
+                    >
+                      {link.title}
+                    </button>
+
+                    {link.id !== 4 ? (
+                      <span
+                        className={`${activeSection === `${link.href}` ? "w-full" : "w-0"} absolute bottom-0 left-0 h-0.5 bg-amber-700 transition-all duration-300 ease-in-out`}
+                      />
+                    ) : null}
+                  </a>
+                </li>
+              ))}
+              {/* <li>
                 <a href="#home" className="relative block">
                   <button
                     className="pt-2"
@@ -170,7 +192,7 @@ export default function Header() {
                     Contact
                   </button>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
