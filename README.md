@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! Here, you'll find a showcase of my work, skills, and projects that reflect my passion for web development and graphic design.
 
-## Available Scripts
+## About Me
 
-In the project directory, you can run:
+Hi! I'm Kyle R. Burdeos, a Software Engineer based in the Philippines with a background in Web Development. I specialize in Front-End Development, and my goal is to achieve new things related to Web Development and Design while continuously improving my skills to create high-quality products in my career.
 
-### `npm start`
+## Skills
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Languages & Frameworks**: Javascript, HTML5, CSS3, React, Typescript, TailwindCSS, C#, PHP
+- **Tools & Technologies**: Git, npm, VScode, Figma, Jira
+- **Design**: Canva, Adobe Photoshop, Responsive Web Design
+- **Other Skills**: Agile Methodologies, Problem-solving and Debugging
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Projects
 
-### `npm test`
+Here are some of my notable projects:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project 1: My Portfolio
 
-### `npm run build`
+- **Description**: A personal portfolio website to showcase my skills and projects, designed with a clean and modern aesthetic. This site is fully responsive and highlights my expertise in front-end development.
+- **Technologies Used**: HTML5, CSS3, JavaScript, React(Typescript), TailwindCSS, Materialui(icons), svgrepo(icons), Formspree
+- **Link**: https://kylebdev.github.io/kyledev-portfolio/#project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Project 2: Dungeon Brains
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Description**: A game based mobile learning application for pupils using problem-posing strategy.
+- **Technologies Used**: C#, Unity, Unity Editor
+- **Link**: "I will upload the apk soon in My Drive"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Education
 
-### `npm run eject`
+- **[Degree]** in Bachelor of Science in Information Technology from From University of Southeaster Philippines, 2022
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feel free to reach out to me:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Email**: krburdeos20dev@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/kyle-burdeos-541a11248/
+- **GitHub**: https://github.com/kylebdev
+- **Portfolio Website**: https://kylebdev.github.io/kyledev-portfolio/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Thank you for visiting my portfolio! I look forward to connecting with you.
 
-## Learn More
+###
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+THIS PORTFOLIO MADE WITH LOVE ❤️
