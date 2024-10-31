@@ -27,11 +27,11 @@ Here are some of my notable projects:
 
 - **Description**: A game based mobile learning application for pupils using problem-posing strategy.
 - **Technologies Used**: C#, Unity, Unity Editor
-- **Link**: "I will upload the apk soon in My Drive"
+- **Link**: "soon to upload"
 
 ## Education
 
-- **[Degree]** in Bachelor of Science in Information Technology from From University of Southeaster Philippines, 2022
+- **[Degree]** Bachelor of Science in Information Technology from the University of Southeastern Philippines, Davao City, Obrero Main Campus, graduated in 2022.
 
 ## Contact
 
@@ -44,6 +44,4 @@ Feel free to reach out to me:
 
 Thank you for visiting my portfolio! I look forward to connecting with you.
 
-###
-
-THIS PORTFOLIO MADE WITH LOVE ❤️
+### THIS PORTFOLIO MADE WITH LOVE AND PASSION ❤️❤️❤️
