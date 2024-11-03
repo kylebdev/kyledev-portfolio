@@ -21,7 +21,7 @@ Here are some of my notable projects:
 
 - **Description**: A personal portfolio website to showcase my skills and projects, designed with a clean and modern aesthetic. This site is fully responsive and highlights my expertise in front-end development.
 - **Technologies Used**: HTML5, CSS3, JavaScript, React(Typescript), TailwindCSS, Materialui(icons), svgrepo(icons), Formspree
-- **Link**: https://kylebdev.github.io/kyledev-portfolio/#project
+- **Link**: https://kylebdev.github.io/kyledev-portfolio
 
 ### Project 2: Dungeon Brains
 

@@ -5,10 +5,10 @@ const projects = [
     id: 1,
     title: "Portfolio Website",
     description: "A responsive portfolio to showcase my projects and skills.",
-    src: "/video/hlights-portfolio.mp4",
+    src: "/video/Portfolio.mp4",
     tech: ["React-Typescript", "Tailwind CSS"],
-    link: "#",
-    github: "#",
+    link: "https://kylebdev.github.io/kyledev-portfolio",
+    reps: "https://github.com/kylebdev/kyledev-portfolio",
   },
   {
     id: 2,
@@ -17,8 +17,8 @@ const projects = [
       "A game based mobile learning application for pupils using problem-posing strategy.",
     src: "",
     tech: ["Unity", "C#"],
-    link: "#",
-    github: "#",
+    link: "https://drive.google.com/file/d/1lyAG7fbdx3Fy_CNa0QmulDO-MtC5ItEv/view?usp=sharing",
+    reps: "https://drive.google.com/file/d/1wiklezT0HcMXQw9gqViXEofjxOd7oCI9/view?usp=sharing",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const projects = [
     src: "/profile.png",
     tech: ["Html", "Bootstrap CSS", "php"],
     link: "#",
-    github: "#",
+    reps: "#",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const projects = [
     src: "/profile.png",
     tech: ["React", "Tailwind CSS"],
     link: "#",
-    github: "https://github.com/yourgithub/portfolio",
+    reps: "#",
   },
 ];
 
@@ -116,7 +116,7 @@ const Projects = () => {
                   </div>
                   <div className="mt-4 flex justify-between">
                     <a
-                      href={project.github}
+                      href={project.reps}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm font-thin tracking-tight text-white/70 hover:text-white/50"

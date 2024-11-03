@@ -91,6 +91,8 @@ export default function Contact() {
                   <div className="flex-cols flex justify-center pt-3">
                     <a
                       href="https://www.facebook.com/kaelmotivated/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mx-1 duration-75 ease-in hover:scale-125"
                     >
                       <Facebook
@@ -108,6 +110,8 @@ export default function Contact() {
                     </a>
                     <a
                       href="https://www.instagram.com/kyleburdeos/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mx-1 duration-75 ease-in hover:scale-125"
                     >
                       <Instagram
@@ -125,6 +129,8 @@ export default function Contact() {
                     </a>
                     <a
                       href="https://www.linkedin.com/in/kyle-burdeos-541a11248/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mx-1 stroke-1 duration-75 ease-in hover:scale-125"
                     >
                       <LinkedIn

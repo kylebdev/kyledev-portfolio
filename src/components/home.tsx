@@ -104,6 +104,8 @@ export default function Home({ ContentRef }: any) {
                 <div className="flex w-full justify-center border-t-amber-50 p-3">
                   <a
                     href="https://www.facebook.com/kaelmotivated/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mx-2 rounded-full border-2 border-dashed border-neutral-500 p-[2px] duration-75 ease-in hover:scale-125"
                   >
                     <FacebookOutlined
@@ -115,6 +117,8 @@ export default function Home({ ContentRef }: any) {
                   </a>
                   <a
                     href="https://www.instagram.com/kyleburdeos/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mx-2 rounded-full border-2 border-dashed border-neutral-500 p-[2px] duration-75 ease-in hover:scale-125"
                   >
                     <Instagram
@@ -125,7 +129,9 @@ export default function Home({ ContentRef }: any) {
                     />
                   </a>
                   <a
-                    href="www.linkedin.com/in/kyle-burdeos-541a11248"
+                    href="https://www.linkedin.com/in/kyle-burdeos-541a11248"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mx-2 rounded-full border-2 border-dashed border-neutral-500 p-[2px] duration-75 ease-in hover:scale-125"
                   >
                     <LinkedIn
@@ -137,6 +143,8 @@ export default function Home({ ContentRef }: any) {
                   </a>
                   <a
                     href="https://github.com/kylebdev"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mx-2 rounded-full border-2 border-dashed border-neutral-500 p-[2px] duration-75 ease-in hover:scale-125"
                   >
                     <GitHub
