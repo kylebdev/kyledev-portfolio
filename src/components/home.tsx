@@ -7,6 +7,8 @@ import {
   Instagram,
   LinkedIn,
   PlayCircle,
+  ElectricBolt,
+  LocationOn,
 } from "@mui/icons-material";
 
 export default function Home({ ContentRef }: any) {
@@ -60,10 +62,10 @@ export default function Home({ ContentRef }: any) {
               <div
                 className={` ${isVisible ? "animate-slidein500" : "opacity-0"} opacity-0`}
               >
-                <div className="text-center text-4xl font-extrabold text-white lg:text-5xl 2xl:text-6xl">
+                <div className="text-center text-4xl font-extrabold text-white md:text-5xl 2xl:text-6xl">
                   Kyle R. Burdeos
                 </div>
-                <div className="animate-pulse text-center text-sm font-extralight tracking-tighter text-white md:text-base lg:text-lg 2xl:text-lg">
+                <div className="text-center text-base font-semibold tracking-tighter text-white md:text-lg">
                   Software Engineer
                 </div>
               </div>
@@ -71,16 +73,16 @@ export default function Home({ ContentRef }: any) {
               <div
                 className={` ${isVisible ? "animate-slidein700" : "opacity-0"} opacity-0`}
               >
-                <div className="mb-4 mt-8 flex justify-center">
+                {/* <div className="mb-4 mt-8 flex justify-center">
                   <div className="relative">
                     <button className="bg-transparent duration-75 ease-in-out hover:scale-110">
                       <span className="absolute left-10 right-0 w-max text-sm text-white md:text-sm lg:text-base 2xl:text-sm">
-                        Hire me
+                        Available now
                       </span>
-                      <PlayCircle
+                      <ElectricBolt
                         sx={{
                           fontSize: {
-                            xl: 55,
+                            xl: 40,
                             lg: 60,
                             md: 55,
                             sm: 55,
@@ -91,12 +93,41 @@ export default function Home({ ContentRef }: any) {
                       />
                     </button>
                   </div>
+                </div> */}
+
+                <div className="flex items-center justify-center pb-12 pt-8">
+                  <div className="flex flex-col items-center space-y-4 text-black">
+                    <div className="flex items-center space-x-2">
+                      <LocationOn
+                        sx={{
+                          fontSize: 18,
+                        }}
+                        className="text-white/20"
+                      />
+                      <h2 className="text-sm font-extrabold tracking-wider text-white/20 lg:text-base">
+                        Davao City, Philippines
+                      </h2>
+                    </div>
+                    <div className="rounded-2xl border border-dashed border-amber-500 bg-amber-700 px-3 py-1.5">
+                      <div className="flex animate-pulse items-center space-x-2">
+                        <ElectricBolt
+                          sx={{
+                            fontSize: 15,
+                            color: "white",
+                          }}
+                        />
+                        <h2 className="text-xs font-normal tracking-wider text-white lg:text-sm">
+                          Available Now
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="border-b">
                   <Marquee direction="right" speed={50}>
-                    <p className="text-xs font-extralight -tracking-tighter text-white md:text-xs lg:text-xs xl:text-sm 2xl:text-xs">
-                      let's connect! ●
+                    <p className="text-xs font-extralight -tracking-tighter text-white">
+                      LET'S CONNECT ●
                     </p>
                   </Marquee>
                 </div>

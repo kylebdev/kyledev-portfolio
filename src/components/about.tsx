@@ -47,7 +47,7 @@ export default function About() {
             />
           </div>
           {/* div2 */}
-          <div className="relative h-full w-full py-20 pr-4 sm:p-16 sm:pr-10 md:p-28 md:pb-20 md:pl-6 md:pr-16 lg:p-36 lg:pb-16 lg:pl-10 xl:p-36 xl:pl-10 2xl:p-44 2xl:pl-16">
+          <div className="relative h-full w-full py-20 pr-4 sm:p-16 sm:pr-10 md:p-28 md:pb-20 md:pl-6 md:pr-16 lg:p-36 lg:pb-16 lg:pl-10 xl:p-36 xl:pl-10 2xl:py-28 2xl:pl-16 2xl:pr-72">
             <h1 className="mb-2 text-right text-5xl font-semibold tracking-tight text-neutral-700 md:text-5xl lg:text-5xl xl:text-6xl">
               About Me
             </h1>
@@ -88,13 +88,13 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mt-0 flex justify-end lg:mt-6">
+            <div className="mt-0 flex justify-end lg:mt-4 2xl:mt-2">
               <div className="flex flex-col items-center justify-center rounded-sm p-2">
                 <img
                   alt="Kyle Burdeos Dev Logo"
                   src={`${process.env.PUBLIC_URL}/myimg/my-logo.png`}
                   draggable={false}
-                  className="w-[160px] xl:w-[200px]"
+                  className="w-[120px] sm:w-[160px]"
                 />
                 <div className="relative">
                   <h1 className="text-end font-mono text-xs font-light italic tracking-wider md:text-sm lg:text-sm xl:text-base">
