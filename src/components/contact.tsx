@@ -128,7 +128,7 @@ export default function Contact() {
                       />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/kyle-burdeos-541a11248/"
+                      href="https://www.linkedin.com/in/kyleburdeos/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mx-1 stroke-1 duration-75 ease-in hover:scale-125"

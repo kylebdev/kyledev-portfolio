@@ -2,37 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/mylogo-fav.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Kyle Burdeos' professional portfolio showcasing responsive web development projects using React, TypeScript, and more."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="keywords"
+      content="Kyle Burdeos, web developer, portfolio, React, TypeScript, front-end developer, responsive design"
+    />
+    <meta name="author" content="Kyle Burdeos" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Kyle's Portfolio</title>
+    <!-- Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="Kyle Burdeos | Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore Kyle Burdeos' professional portfolio showcasing web development projects using React, TypeScript, and more."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/portfolio-thumbnail.png" />
+    <meta
+      property="og:url"
+      content="https://kylebdev.github.io/kyledev-portfolio/"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Kyle Burdeos | Front-End Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Kyle Burdeos' portfolio showcasing responsive web development projects using React, TypeScript, and more."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/portfolio-thumbnail.png" />
+
+    <!-- Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kyle Burdeos",
+        "jobTitle": "Front-End Developer",
+        "url": "https://kylebdev.github.io/kyledev-portfolio/",
+        "sameAs": [
+          "https://github.com/kylebdev",
+          "https://www.linkedin.com/in/kyleburdeos"
+        ]
+      }
+    </script>
+
+    <title>Kyle Burdeos | Front-End Developer Portfolio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

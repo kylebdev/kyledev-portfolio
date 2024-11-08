@@ -91,10 +91,11 @@ export default function About() {
             <div className="mt-0 flex justify-end lg:mt-4 2xl:mt-2">
               <div className="flex flex-col items-center justify-center rounded-sm p-2">
                 <img
-                  alt="Kyle Burdeos Dev Logo"
+                  alt="About me by Kyle Burdeos"
                   src={`${process.env.PUBLIC_URL}/myimg/my-logo.png`}
                   draggable={false}
                   className="w-[120px] sm:w-[160px]"
+                  loading="lazy"
                 />
                 <div className="relative">
                   <h1 className="text-end font-mono text-xs font-light italic tracking-wider md:text-sm lg:text-sm xl:text-base">

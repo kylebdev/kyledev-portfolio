@@ -6,7 +6,6 @@ import {
   GitHub,
   Instagram,
   LinkedIn,
-  PlayCircle,
   ElectricBolt,
   LocationOn,
 } from "@mui/icons-material";
@@ -55,6 +54,7 @@ export default function Home({ ContentRef }: any) {
                 alt="Hi! I'm Kyle Burdeos Portfolio, Welcome to my Portfolio"
                 className="w-[270px] rounded-full border-4 border-white/30 shadow-inner shadow-white md:w-[300px] lg:w-[330px] 2xl:w-[400px]"
                 draggable="false"
+                loading="lazy"
               />
             </div>
             <div className="ml-0 mt-8 2xl:ml-16">
@@ -160,7 +160,7 @@ export default function Home({ ContentRef }: any) {
                     />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/kyle-burdeos-541a11248"
+                    href="https://www.linkedin.com/in/kyleburdeos/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-2 rounded-full border-2 border-dashed border-neutral-500 p-[2px] duration-75 ease-in hover:scale-125"
