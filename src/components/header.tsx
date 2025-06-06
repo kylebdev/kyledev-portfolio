@@ -10,10 +10,10 @@ import Footer from "./footer";
 import { useEffect, useRef, useState } from "react";
 
 const links = [
-  { id: 1, title: "Home", href: "home" },
-  { id: 2, title: "About Me", href: "about" },
-  { id: 3, title: "Projects", href: "project" },
-  { id: 4, title: "Contact", href: "contact" },
+  { id: 1, title: "Home", href: "#" },
+  { id: 2, title: "About Me", href: "#about" },
+  { id: 3, title: "Projects", href: "#project" },
+  { id: 4, title: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
@@ -113,7 +113,7 @@ export default function Header() {
                   className={` ${link.id === 4 ? "mt-4 lg:mt-0" : null}`}
                 >
                   <a
-                    href={`#` + link.href}
+                    href={link.href}
                     className={`${link.id === 4 ? `{ rounded-sm bg-amber-700 p-2 ${activeSection === "contact" ? "shadow shadow-amber-500" : null} }` : "relative"} `}
                   >
                     <button
@@ -132,67 +132,6 @@ export default function Header() {
                   </a>
                 </li>
               ))}
-              {/* <li>
-                <a href="#home" className="relative block">
-                  <button
-                    className="pt-2"
-                    onClick={() => {
-                      setShowNav(false);
-                    }}
-                  >
-                    Home
-                  </button>
-                  <span
-                    className={`${activeSection === "home" ? "w-full" : "w-0"} absolute bottom-0 left-0 h-0.5 bg-amber-700 transition-all duration-300 ease-in-out`}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="relative block">
-                  <button
-                    className="pt-2"
-                    onClick={() => {
-                      setShowNav(false);
-                    }}
-                  >
-                    About Me
-                  </button>
-                  <span
-                    className={`${activeSection === "about" || activeSection === "skills" ? "w-full" : "w-0"} absolute bottom-0 left-0 h-0.5 bg-amber-700 transition-all duration-300 ease-in-out`}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#project" className="relative block">
-                  <button
-                    className="pt-2"
-                    onClick={() => {
-                      setShowNav(false);
-                    }}
-                  >
-                    Projects
-                  </button>
-                  <span
-                    className={`${activeSection === "project" ? "w-full" : "w-0"} absolute bottom-0 left-0 h-0.5 bg-amber-700 transition-all duration-300 ease-in-out`}
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#contact"
-                  className={`${activeSection === "contact" ? "border border-amber-500" : "border-none"} block rounded-sm bg-amber-700 bg-none`}
-                >
-                  <button
-                    className="p-2"
-                    onClick={() => {
-                      setShowNav(false);
-                    }}
-                  >
-                    Contact
-                  </button>
-                </a>
-              </li> */}
             </ul>
           </div>
         </nav>

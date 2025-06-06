@@ -72,8 +72,8 @@ export default function About() {
             <div className="mt-6 lg:mt-10">
               <div className="flex items-center justify-end gap-3.5">
                 <a
-                  href={`${process.env.PUBLIC_URL}/pdf/my-cv.pdf`}
-                  download="Kyle Burdeos CV 2024"
+                  href={`${process.env.PUBLIC_URL}/pdf/BURDEOS-CV.pdf`}
+                  download="Kyle Burdeos CV 2025"
                   className="rounded-md border border-amber-500 bg-amber-700 p-2 text-xs font-medium text-white hover:bg-amber-800 md:text-xs lg:text-sm xl:text-base"
                 >
                   Download CV

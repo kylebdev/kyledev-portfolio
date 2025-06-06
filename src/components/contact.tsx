@@ -3,24 +3,30 @@ import { useForm, ValidationError } from "@formspree/react";
 import React, { useState, useRef, useEffect } from "react";
 
 export default function Contact() {
-  //
-  //
   const [isVisible, setIsVisible] = useState(false);
   const animateRef = useRef<HTMLDivElement>(null);
   const [state, handleSubmit] = useForm("movqeqog");
   const [showForm, setShowForm] = useState(true);
+
+  // text generated variable
+  const [text, setText] = useState("");
+  const fullText =
+    "Bring your ideas to life with creativity and expertise. Let's collaborate to turn your vision into reality!";
+  const [index, setIndex] = useState(0);
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await handleSubmit(e);
   };
 
+  // after sending a message the setshowform false
   useEffect(() => {
     if (state.succeeded) {
       setShowForm(false);
     }
   }, [state.succeeded]);
 
+  // intersecting
   useEffect(() => {
     const currentElement = animateRef.current; // Store the ref value in a variable
 
@@ -41,6 +47,18 @@ export default function Contact() {
       }
     };
   }, [showForm]); // Re-run effect when showForm changes
+
+  // text-generated
+  useEffect(() => {
+    if (isVisible && text.length < fullText.length) {
+      const timer = setTimeout(() => {
+        setText((prev) => prev + fullText[index]);
+        setIndex((prev) => prev + 1);
+      }, 50); // Adjust the speed of typing here
+
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible, index, fullText]);
 
   if (!showForm) {
     return (
@@ -78,8 +96,7 @@ export default function Contact() {
 
                 <div className="mt-10">
                   <p className="text-balance text-center text-base text-neutral-700 md:text-lg">
-                    Bring your ideas to life with creativity and expertise.
-                    Let's collaborate to turn your vision into reality!
+                    {text}
                   </p>
                 </div>
 
