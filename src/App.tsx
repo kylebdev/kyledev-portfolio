@@ -6,7 +6,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/kyledev-portfolio">
       <Routes>
         <Route path="/" element={<Header />} />
         <Route path="*" element={<NotFound />} />
