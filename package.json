@@ -1,7 +1,7 @@
 {
   "name": "kyle-portfolio",
   "version": "1.0.0",
-  "homepage": "https://kylebdev.github.io/kyledev-portfolio",
+  "homepage": "https://kylebdev.github.io/",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.5.1",
